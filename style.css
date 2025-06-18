@@ -1,0 +1,283 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0 20px 50px;
+    background-color: #fff;
+    color: rgb(129, 121, 53);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(156, 115, 82);
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+header {
+    background-image: url("https://cipollino.ua/content/uploads/images/chto-ytaliantsy-dobavliaiut-v-pytstsu.png");
+    background-size: cover;
+    background-position: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 15px;
+    color: lemonchiffon;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+    background-color: brown;
+    color: antiquewhite;
+    font-size: 45px;
+    margin: 40px 0 20px;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+/* Меню */
+
+.menu-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tovar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-container img {
+    width: 350px;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.descr {
+    flex: 1;
+    min-width: 280px;
+}
+
+.descr h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.descr p {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.buy {
+    font-weight: bold;
+    font-size: 22px;
+    color: darkgreen;
+}
+
+button {
+    background-color: greenyellow;
+    font-size: 20px;
+    color: green;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7ed957;
+}
+
+/* Відгуки */
+
+.reviews {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+}
+
+.retro {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Про нас */
+
+.pizza {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.rito {
+    font-size: 28px;
+    color: white;
+    background-color: rgba(134, 98, 51, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    line-height: 1.4;
+    transition: background-color 0.5s ease;
+}
+
+.rito:hover {
+    background-color: rgba(134, 98, 51, 0.9);
+}
+
+/* Акція */
+
+.promos {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.class {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.class:hover {
+    transform: scale(1.1);
+}
+
+/* Футер */
+
+footer {
+    margin-top: 50px;
+    padding: 30px 20px;
+    background-color: rgb(156, 115, 82);
+    color: antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.rie {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.rue {
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+}
+
+/* iframe */
+
+iframe {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* Адаптивність */
+
+@media (max-width: 900px) {
+    .tovar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-container img {
+        width: 90vw;
+        height: auto;
+    }
+    .descr {
+        width: 90vw;
+        text-align: center;
+    }
+    nav {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .buy, .descr p {
+        font-size: 18px;
+    }
+    button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+.rito {
+  animation: fadeInOpacity 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInOpacity {
+  to {
+    opacity: 1;
+  }
+}
